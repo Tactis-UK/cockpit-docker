@@ -21,12 +21,14 @@ On Fedora:
 
 # Getting and building the source
 
-These commands check out the source and build it into the `dist/` directory:
+This repo has been forked and modified to use v1.41 of the docker API, which works with Debian 12 and docker.io from the debian main repo:
 
 ```
-git clone https://github.com/cockpit-docker/cockpit-docker
-cd cockpit-docker
+sudo apt install gettext nodejs make
+git clone https://github.com/Tactis-UK/cockpit-docker.git
+cd cockpit-docker/
 make
+sudo make install
 ```
 
 # Installing
